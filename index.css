@@ -68,8 +68,10 @@ select {
 
 .flex {
     display: flex;
+    gap: var(--gap, 1rem);
 }
 
 .grid {
     display: grid;
+    gap: var(--gap, 1rem);
 }
