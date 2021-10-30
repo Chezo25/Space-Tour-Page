@@ -65,3 +65,11 @@ select {
   /* ------------------- */
 /* Utility classes      */
 /* ------------------- */
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
