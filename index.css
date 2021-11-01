@@ -198,3 +198,13 @@ select {
 /* ------------------- */
 /* Compontents         */
 /* ------------------- */
+
+.large-button {
+    display: grid;
+    place-items: center;       /* short hand for justify itemm & align items  */
+    padding: 0 2em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    text-decoration: none;
+    
+}
