@@ -57,6 +57,8 @@ picture {
 
 body{
     font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: hsl( var(--clr-light) );
     line-height: 1.5;
     min-width: 100vh;
 }
