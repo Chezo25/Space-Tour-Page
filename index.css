@@ -122,7 +122,8 @@ select {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 2em repeat(2, minmax(0, 40rem)) 2em;
+    column-gap: var(--container-gap, 2rem);;
+    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(2rem, 1fr);
 }
 
 .flow > *:where(:not(:first-child)){
@@ -135,6 +136,15 @@ select {
     margin-inline: auto; 
     max-width: 65rem;
 }
+
+.grid-container > *:first-child {
+    grid-column: 2;
+}
+
+.grid-container > *:last-child {
+    grid-column: 3;
+}
+
 /* screenreader software section */
 .sr-only {
     position: absolute;
