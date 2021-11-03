@@ -120,6 +120,11 @@ select {
     gap: var(--gap, 1rem);
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 2em repeat(2, minmax(0, 40rem)) 2em;
+}
+
 .flow > *:where(:not(:first-child)){
     margin-top: var(--flow-space, 1rem);
     outline: 1px solid red;
