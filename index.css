@@ -24,7 +24,23 @@
     --ff-sans-normal: "Barlow", sans-serif;
 }
 
+@media (min-width: 35em) {
+    
+}
 
+@media (min-width: 45em) {
+    :root {
+        /* font-sizes */
+        --fs-900: 9.375rem;
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+        --fs-300: 1rem;
+        --fs-200: 0.875rem;
+    }
+}
 
 
 /*---------*/
@@ -140,13 +156,22 @@ select {
     max-width: 65rem;
 }
 
-.grid-container > *:first-child {
-    grid-column: 2;
+@media (min-width: 45rem ) {
+    .grid-container {
+        column-gap: var(--container-gap, 2rem);
+        grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
+    }
+    .grid-container > *:first-child {
+        grid-column: 2;
+    }
+    
+    .grid-container > *:last-child {
+        grid-column: 3;
+    }
+
 }
 
-.grid-container > *:last-child {
-    grid-column: 3;
-}
+
 
 /* screenreader software section */
 .sr-only {
