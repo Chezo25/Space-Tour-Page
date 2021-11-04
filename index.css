@@ -142,6 +142,10 @@ select {
     gap: var(--gap, 1rem);
 }
 
+.d-block {
+    display: block;
+}
+
 .grid-container {
     display: grid;
     column-gap: var(--container-gap, 2rem);;
