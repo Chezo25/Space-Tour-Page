@@ -185,7 +185,8 @@ select {
     }
 
     .grid-contain--home{
-        padding-bottom: 6rem;
+        padding-bottom: max(6rem, 20vh);
+        align-items: end;
     }
 
 }
@@ -352,3 +353,11 @@ select {
 .dot-indicators > [aria-selected="true"] {
   background-color: hsl( var(--clr-white) / 1); 
 }
+
+
+/* ------------------- */
+/* Page specfic        */
+/* ------------------- */
+
+/* home */
+
