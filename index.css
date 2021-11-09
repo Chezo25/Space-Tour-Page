@@ -184,6 +184,10 @@ select {
         grid-column: 3;
     }
 
+    .grid-contain--home{
+        padding-bottom: 6rem;
+    }
+
 }
 
 
@@ -346,5 +350,5 @@ select {
 }
 
 .dot-indicators > [aria-selected="true"] {
-    background-color: hsl( var(--clr-white) / 1); 
+  background-color: hsl( var(--clr-white) / 1); 
 }
