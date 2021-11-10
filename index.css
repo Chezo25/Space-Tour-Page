@@ -306,8 +306,15 @@ select {
     backdrop-filter: blur(1rem);     /* bluer effects */
 }
 
-@supports (backdrop-filter: blur(1.5rem)) {
+.mobile-nav-toggle {
+    display: none;
+}
 
+@supports (backdrop-filter: blur(1.5rem)) {
+    .primary-navigation {
+        background: hsl( var(--clr-white) / 0..05);
+        backdrop-filter: blur(1.5rem);
+    }
 }
 
 @media (max-width: 35rem) {
