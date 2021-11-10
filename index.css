@@ -306,6 +306,10 @@ select {
     backdrop-filter: blur(1rem);     /* bluer effects */
 }
 
+@supports (backdrop-filter: blur(1.5rem)) {
+
+}
+
 @media (max-width: 35rem) {
     .primary-navigation {
         --underline-gap: 0.25rem; 
