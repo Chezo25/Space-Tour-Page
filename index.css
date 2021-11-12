@@ -307,7 +307,7 @@ select {
 }
 
 .mobile-nav-toggle {
-    display: none;
+    display: block;
 }
 
 @supports (backdrop-filter: blur(1.5rem)) {
