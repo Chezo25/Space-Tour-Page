@@ -199,6 +199,15 @@ select {
   border: 0;
 }
 
+.skip-to-content:focus { /* hide ada funtions */
+    position: relative;
+    width: max-content;
+    height: auto;
+    clip: 0;
+    background: white;
+    color: black;
+}
+
 /* colors */
 
 .bg-dark { background-color: hsl( var(--clr-dark) );}
