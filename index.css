@@ -466,6 +466,16 @@ body {
     max-width: 50ch;
 }
 
+/* distin layout */
+
+.grid-container--destination {
+    grid-template-areas: 
+        'title'
+        'image'
+        'tabs'
+        'content'
+}
+
 @media (min-width: 45em) {
     .grid-container {
         text-align: left;
