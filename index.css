@@ -552,7 +552,7 @@ body {
     }
 
     .destination-meta {
-        --gap: min(15vw, 6rem);
+        --gap: min(5vw, 6rem);
         justify-content: start;
     }
 }
