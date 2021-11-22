@@ -542,6 +542,7 @@ body {
     }
 
     .grid-container--crew {
+        padding-bottom: 0;
         grid-template-areas: 
             'title'
             'content'
@@ -597,5 +598,13 @@ body {
             '. title title .'
             '. content image .'
             '. tabs image .';
+    }
+
+    .grid-container--crew > .dot-indicators {
+        justify-self: start;
+    }
+
+    .grid-container--crew > img {
+        align-self: end;
     }
 }
