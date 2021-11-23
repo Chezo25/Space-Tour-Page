@@ -1,0 +1,1 @@
+const tabLists = document.querySelector('[role="tablist"]');
