@@ -18,5 +18,11 @@ tabList.addEventListener('keydown', (e) => {
         console.log(tabFocus)
     }
     
-    // if the left key is pushed, move to the next tab on the left
+    if (e.keyCode === keydownLeft) {
+        tabFocus--;
+        console.log(tabFocus)
+    }
+
+    tabs[tabFocus].setAttribute("tabindex", 0);
+    tabs[tabFocus].focus
 })
