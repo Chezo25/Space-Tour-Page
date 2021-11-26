@@ -1,10 +1,10 @@
 const tabList = document.querySelector('[role="tablist"]');
 const tabs = tabList.querySelectorAll('[role="tab"]');
 
+tabList.addEventListener('keydown', changeTabFocus);
 
-
-tabList.addEventListener('keydown', (e) => {
-
+tabs.forEach((tab) => {
+    tab.addEventListener('click', changeTabPanel);
 });
 
 // switch the tabs back and forward
@@ -33,4 +33,15 @@ function changeTabFocus(e) {
     
     tabs[tabFocus].setAttribute("tabindex", 0);
     tabs[tabFocus].focus();
+}
+
+function changeTabPanel(e) {
+    const targetTab = e.target;
+    const targetPanel = targetTab.getAttribute("aria-controls");
+
+    const tabContainer = targetTab.parentNode;
+    const mainContainer = tabContainer.parentNode;
+
+    mainContainer.querySelectorAll('article').forEach((article) => article)
+    mainContainer.querySelector([`#${targetPanel}`]).removeAttribute('hidden');
 }
