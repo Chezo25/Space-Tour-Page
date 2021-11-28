@@ -12,7 +12,8 @@
             rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <title>Space tourism website</title>
-  <!-- <script src="index.js" defer></script> -->
+  <script src="index.js" defer></script> 
+  <script src="tabs.js" defer></script> 
 </head>
 <body class="crew">
     <a class="skip-to-content sr-only " href="#main">Skip to main content</a>
@@ -24,11 +25,11 @@
             <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
             <nav>
                 <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-                  <li class="active"><a class="uppercase text-white letter-spacing-2" 
+                  <li ><a class="uppercase text-white letter-spacing-2" 
                     href="index.html"><span aria-hidden="true">00</span>Home</a>
                     <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" 
                       href="destination.html"><span aria-hidden="true">01</span>Destination</a>
-                    <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" 
+                    <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" 
                       href="crew.html"><span aria-hidden="true"> 02</span>Crew</a>
                     <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" 6
                       href="technology.html"><span aria-hidden="true"> 03</span>Technology</a>
@@ -59,7 +60,7 @@
     </article> 
     
     <!-- mission specialist -->
-    <article class="crew-details flow" id="mission-tab" role="tabpanel" tabindex="0">
+    <article hidden class="crew-details flow" id="mission-tab" role="tabpanel" tabindex="0">
       <header class="flow flow--space-small">
         <h2 class="fs-600 ff-serif uppercase">Mission Specialist</h2>
         <p class="fs-700 uppercase ff-serif">Mark SHuttleworth</p>
@@ -70,7 +71,7 @@
     </article> 
     
     <!-- pilot -->
-    <article class="crew-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
+    <article hidden class="crew-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
       <header class="flow flow--space-small">
         <h2 class="fs-600 ff-serif uppercase">Pilot</h2>
         <p class="fs-700 uppercase ff-serif">Victor Glover</p>
@@ -82,7 +83,7 @@
     </article> 
     
     <!-- engineer -->
-    <article class="crew-details flow" id="crew-tab" role="tabpanel" tabindex="0">
+    <article hidden class="crew-details flow" id="crew-tab" role="tabpanel" tabindex="0">
       <header class="flow flow--space-small">
         <h2 class="fs-600 ff-serif uppercase">Flight Engineer</h2>
         <p class="fs-700 uppercase ff-serif">Anousheh Ansari</p>
@@ -97,15 +98,15 @@
       <source srcset="assets/crew/image-douglas-hurley.webp" type="image/webp">
       <img src="assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
     </picture>
-    <picture id="mission-image">
+    <picture hidden id="mission-image">
       <source srcset="assets/crew/image-mark-shuttleworth.webp" type="image/webp">
       <img src="assets/crew/image-mark-shuttleworth.png" alt="Douglas Hurley">
     </picture>
-    <picture id="pilot-image">
+    <picture hidden id="pilot-image">
       <source srcset="assets/crew/image-victor-glover.webp" type="image/webp">
       <img src="assets/crew/image-victor-glover.png" alt="Douglas Hurley">
     </picture>
-    <picture id="crew-image">
+    <picture hidden id="crew-image">
       <source srcset="assets/crew/image-anousheh-ansari.webp" type="image/webp">
       <img src="assets/crew/image-anousheh-ansari.png" alt="Douglas Hurley">
     </picture>
